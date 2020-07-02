@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow 
 import cx_Oracle
 
-cx_Oracle.init_oracle_client(lib_dir=r"C:\instantclient_19_6")
+cx_Oracle.init_oracle_client(lib_dir=r"C:\flaskrestapi\instantclient_19_6")
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://TMIMS:Tm1m5u5R@127.0.0.1:1527/BQMDEV'
